@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/recipe.css" />
+    <link rel="stylesheet" href="./css/global.css"/>
+    <link rel="icon" type="image/png" href="./assets/img/main_logo_small.png" />
+    <title>Kochwelt - Ghackets mit Hörnli und Apfelmus</title>
+  </head>
+  <body>
+    <header>
+      <a href="./index.html"><img class="header_logo" src="./assets/img/main_logo.png" /></a>
+      <nav class="hide_mobile">
+        <a href="./index.html" class="nav-link">Start</a>
+        <a href="./hoernli_ghakets_by_zita.html" class="nav-link nav-link_active">Rezept des Tages</a>
+        <a href="./contact.html" class="nav-link">Kontakt</a>
+        <a href="./impressum.html" class="nav-link">Impressum</a>
+      </nav>
+      <div class="burger_lines">
+        <button class="burger_btn" onclick="showBurgerMenu()">
+          _____<br />
+          _____<br />
+          _____<br />
+        </button>
+      </div>
+      <div class="burger_menu">
+        <a href="./index.html" class="nav-link">> Start</a>
+        <a href="./hoernli_ghakets_by_zita.html" class="nav-link nav-link_active">>Rezept des Tages</a>
+        <a href="./contact.html" class="nav-link">> Kontakt</a>
+        <a href="./impressum.html" class="nav-link">> Impressum</a>
+        <img src="./assets/img/main_logo.png" />
+        <a class="nav-link close_btn" onclick="closeBurgerMenu()">X Schließen</a>
+      </div>
+    </header>
+    <div class="contentblocker_1920px">
+      <section class="recipe_intro margin100">
+        <h1>Ghackets mit Hörnli und Apfelmus</h1>
+        <img class="recipe_img" src="./assets/img/recipe_img/Hoernli_ghakets.jpg" />
+        <div class="recipe_stats">
+          <div class="stat_info">
+            <img class="recipe_stats_img" src="./assets/img/recipe_img/recipe_icons/clock.svg" />
+            <span>45 Min.</span>
+          </div>
+          <div class="stat_info">
+            <img class="recipe_stats_img" src="./assets/img/recipe_img/recipe_icons/brain-solid.svg" />
+            <span>simpel</span>
+          </div>
+          <div class="stat_info">
+            <img class="recipe_stats_img" src="./assets/img/recipe_img/recipe_icons/calendar.svg" />
+            <span>21.05.2025</span>
+          </div>
+        </div>
+      </section>
+      <section class="recipe_list_section margin100">
+        <div class="portion_calculator">
+          <label for ="ingredients_for">Zutaten für</label>
+            <form>
+              <input type="number" class="inputfield" id="servings" min="1" value="1" required />
+              <button type="submit" class="portion_btn">Portionen</button>
+            </form>
+        </div>
+        <ul class="ingredient_list">
+          <li class="li_grey">0.4dl Apfelsaft</li>
+          <li>1/2 EL Zitronensaft</li>
+          <li class="li_grey">1/2EL Zucker</li>
+          <li>1/8 Zimtstangen, nach Belieben</li>
+          <li class="li_grey">200g Äpfel (z.B. Boskoop)</li>
+          <li>150g gehacktes Rindfleisch</li>
+          <li class="li_grey">1/4 Zwiebel, gehackt</li>
+          <li>1/4 Knoblauchzehe, gepresst</li>
+          <li class="li_grey">1 1/4 Thymianzweige</li>
+          <li>1/4 EL Thomatenpüree</li>
+          <li class="li_grey">3/8 EL Mehl</li>
+          <li>0.25dl Rotwein oder Bouillon</li>
+          <li class="li_grey">0.5 dl Bouillon</li>
+          <li>100g Hörnli</li>
+          <li class="li_grey">25g geriebener Käse (z.B. Emmentaler)</li>
+          <li>Bratbutter oder Bratcrème</li>
+          <li class="li_grey">ein wenig Salz</li>
+          <li>Pfeffer aus der Mühle, Paprika</li>
+          <li class="li_grey">Majoran zum Garnieren</li>
+        </ul>
+      </section>
+      <section class="preparation_section margin100">
+        <h1>Zubereitung</h1>
+        <div class="preparation_stats">
+          <div class="stat_info">
+            <img class="recipe_stats_img" src="./assets/img/recipe_img/recipe_icons/clock.svg" />
+            <span>ca. 5-15 Minuten</span>
+          </div>
+          <div class="stat_info">
+            <img class="recipe_stats_img" src="./assets/img/recipe_img/recipe_icons/clock.svg" />
+            <span>Gesamtzeit ca. 45 Minuten</span>
+          </div>
+        </div>
+        <div class="preparation_text">
+          <span>1. Apfelmus: Alle Zutaten aufkochen, zugedeckt 10-15 Minuten weich kochen. Zimt entfernen, Äpfel mit der Flüssigkeit pürieren, auskühlen lassen.<br> 
+                2. Fleisch in der heissen Bratbutter anbraten. Hitze reduzieren. Zwiebel, Knoblauch, Kräuter und Tomatenpüree mitbraten. Mehl darüberstreuen, mischen. Mit Rotwein und/oder Bouillon ablöschen, würzen. Zugedeckt bei kleiner Hitze 15-20 Minuten köcheln. Kräuterzweige entfernen.<br>
+                3. Hörnli in reichlich Salzwasser al dente kochen. Abgiessen.<br>
+                4. Apfelmus in Schälchen verteilen. Hörnli und Gehacktes auf Tellern anrichten, mit Käse bestreuen, garnieren.</span>
+        </div>
+        <h3>Rezept erstellt von</h3>
+        <div class="profile">
+          <img class="profile_img" src="./assets/img/recipe_img/profile_img/zita.png" />
+          <span class="profile_text">Zita-Letizia Eich</span>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <img class="invert_logo" src="./assets/img/main_logo.png" />
+      <div class="social_section">
+        <a href="https://facebook.com" target="_blank">
+          <img class="social_icon hide_mobile_725px" src="./assets/img/social_icons/facebook_logo.png" alt="facebook" />
+          <img class="social_icon_725px" src="./assets/img/social_icons/facebook_logo_725px.svg"/>
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img class="social_icon hide_mobile_725px" src="./assets/img/social_icons/instagram_logo.png" alt="instagramm" />
+          <img class="social_icon_725px" src="./assets/img/social_icons/instagram_logo_725px.svg"/>
+        </a>
+        <a href="https://x.com" target="_blank">
+          <img class="social_icon hide_mobile_725px" src="./assets/img/social_icons/twitter_logo.png" alt="twitter" />
+          <img class="social_icon_725px" src="./assets/img/social_icons/twitter_logo_725px.svg"/>
+        </a>
+      </div>
+    </footer>
+  </body>
+  <script src="./script/servings_calculator.js"></script>
+  <script src="./script/burger_menu.js"></script>
+</html>

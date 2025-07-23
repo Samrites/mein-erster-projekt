@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./assets/img/main_logo_small.png">
+  <link rel="stylesheet" href="./css/contact.css">
+  <link rel="stylesheet" href="./css/fonts.css" />
+  <link rel="stylesheet" href="./css/global.css" />
+  <title>Kochwelt - Kontakseite</title>
+</head>
+<body>
+<header>
+  <a href="./index.html"><img class="header_logo" src="./assets/img/main_logo.png" /></a>
+      <nav class="hide_mobile">
+        <a href="./index.html" class="nav-link">Start</a>
+        <a href="./hoernli_ghakets_by_zita.html" class="nav-link">Rezept des Tages</a>
+        <a href="./contact.html" class="nav-link nav-link_active">Kontakt</a>
+        <a href="./impressum.html" class="nav-link">Impressum</a>
+      </nav>
+      <div class="burger_lines">
+        <button class="burger_btn" onclick=showBurgerMenu()>
+          _____<br>
+          _____<br>
+          _____<br>
+        </button>
+      </div>
+      <div class="burger_menu">
+        <a href="./index.html" class="nav-link">> Start</a>
+        <a href="./hoernli_ghakets_by_zita.html" class="nav-link">>Rezept des Tages</a>
+        <a href="./contact.html" class="nav-link nav-link_active">> Kontakt</a>
+        <a href="./impressum.html" class="nav-link">> Impressum</a>
+        <img src="./assets/img/main_logo.png" />
+        <a class="nav-link close_btn" onclick=closeBurgerMenu()>X Schließen</a>
+      </div>
+    </header>
+
+  <section class="main_content_kontact margin100">
+    <div class="main_box">
+      <h2>Kontaktiere uns</h2>
+
+      <form action="https://formspree.io/f/xjkwdlby" method="POST">
+        <div>
+          <label>Dein Name:</label>
+          <input type="text" name="name" required>
+        </div>
+
+        <div>
+          <label>Deine Email:</label>
+          <input type="email" name="email" required>
+        </div>
+        <div>
+          <label>Deine Nachricht:</label>
+          <textarea name="message" required></textarea>
+
+        </div>
+
+        <div class="submit_button_container">
+          <input class="submit_button" type="submit" value="Abschicken">
+        </div>
+
+      </form>
+
+    </div>
+  </section>
+
+  <footer>
+      <img class="invert_logo" src="./assets/img/main_logo.png" />
+      <div class="social_section">
+        <a href="https://facebook.com" target="_blank">
+          <img class="social_icon hide_mobile_725px" src="./assets/img/social_icons/facebook_logo.png" alt="facebook" />
+          <img class="social_icon_725px" src="./assets/img/social_icons/facebook_logo_725px.svg"/>
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img class="social_icon hide_mobile_725px" src="./assets/img/social_icons/instagram_logo.png" alt="instagramm" />
+          <img class="social_icon_725px" src="./assets/img/social_icons/instagram_logo_725px.svg"/>
+        </a>
+        <a href="https://x.com" target="_blank">
+          <img class="social_icon hide_mobile_725px" src="./assets/img/social_icons/twitter_logo.png" alt="twitter" />
+          <img class="social_icon_725px" src="./assets/img/social_icons/twitter_logo_725px.svg"/>
+        </a>
+      </div>
+    </footer>
+  <!-- irdgendwie etwas mit flex: 1; 
+ damit die footer bleib immer oben zu sehen-->
+  <script src="./script/contact.js"></script>
+  <script src="./script/burger_menu.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fotogramm - Mein Fotoalbum</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #222;
+            color: white;
+            justify-content: flex-start;
+        }
+
+        header img {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        header h1 {
+            font-size: 20px;
+            margin: 0;
+        }
+
+        main {
+            background-color: #222;
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            margin-top: 30px;
+            text-align: center;
+            max-width: 900px;
+        }
+
+        .gallery-row {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .gallery-row img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .gallery-row img:hover {
+            transform: scale(1.1);
+        }
+
+        .lightbox {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100vw; height: 100vh;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .lightbox img {
+            max-width: 80vw;
+            max-height: 80vh;
+            margin-bottom: 20px;
+            border-radius: 12px;
+        }
+
+        .lightbox.hidden {
+            display: none;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        button.prev, button.next {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+            border: none;
+            background-color: #444;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="favicon.png" alt="Logo">
+    <h1>Fotogramm</h1>
+</header>
+
+<main>
+    <h2>Your personal photo album</h2>
+
+    <div class="gallery-row">
+        <img src="photo1.jpg" alt="Foto 1">
+        <img src="photo2.jpg" alt="Foto 2">
+        <img src="photo3.jpg" alt="Foto 3">
+        <img src="photo4.jpg" alt="Foto 4">
+        <img src="photo5.jpg" alt="Foto 5">
+        <img src="photo6.jpg" alt="Foto 6">
+    </div>
+
+    <div class="gallery-row">
+        <img src="photo7.jpg" alt="Foto 7">
+        <img src="photo8.jpg" alt="Foto 8">
+        <img src="photo9.jpg" alt="Foto 9">
+    </div>
+
+    <div class="gallery-row">
+        <img src="photo10.jpg" alt="Foto 10">
+        <img src="photo11.jpg" alt="Foto 11">
+        <img src="photo12.jpg" alt="Foto 12">
+    </div>
+</main>
+
+<div class="lightbox hidden">
+    <span class="close">X</span>
+    <img src="" alt="Großes Bild" class="lightbox-image">
+    <div>
+        <button class="prev">←</button>
+        <button class="next">→</button>
+    </div>
+</div>
+
+<script>
+    const images = Array.from(document.querySelectorAll('.gallery-row img'));
+    const lightbox = document.querySelector('.lightbox');
+    const lightboxImage = document.querySelector('.lightbox-image');
+    const closeBtn = document.querySelector('.close');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+
+    let currentIndex = 0;
+
+    images.forEach((img, index) => {
+        img.addEventListener('click', () => {
+            showImage(index);
+        });
+    });
+
+    function showImage(index) {
+        currentIndex = index;
+        lightboxImage.src = images[currentIndex].src;
+        lightbox.classList.remove('hidden');
+    }
+
+    closeBtn.addEventListener('click', () => {
+        lightbox.classList.add('hidden');
+    });
+
+    lightbox.addEventListener('click', (event) => {
+        if (event.target === lightbox) {
+            lightbox.classList.add('hidden');
+        }
+    });
+
+    nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
+    });
+
+    prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        showImage(currentIndex);
+    });
+</script>
+
+</body>
+</html>

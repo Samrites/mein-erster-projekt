@@ -1,0 +1,162 @@
+/* ------------ Rezeptname mit Bild und Stats ------------ */
+.recipe_intro {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 75px;
+  border-bottom: 2px solid rgb(239, 239, 239);
+}
+.recipe_img {
+  object-fit: cover;
+  height: 300px;
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.recipe_stats {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+}
+.recipe_stats_img {
+  height: 16px;
+}
+.stat_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(239, 239, 239);
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 16px;
+  gap: 10px;
+}
+
+/* ------------ Kalkulator------------ */
+.recipe_list_section {
+  margin-top: 20px;
+}
+.portion_calculator {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  margin-top: 20px;
+}
+.inputfield {
+  text-align: center;
+  height: 30px;
+  margin-left: 10px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid rgb(239, 239, 239);
+}
+.portion_btn {
+  background-color: rgb(0, 128, 0);
+  color: white;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+.portion_btn:hover {
+  transition: 125ms;
+  transform: scale(0.9);
+}
+
+/* ------------ Liste ------------ */
+.ingredient_list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
+li {
+  padding: 15px 30px;
+  border-radius: 10px;
+  list-style-type: none;
+}
+.li_grey {
+  background-color: rgb(239, 239, 239);
+}
+
+/* ------------ Preparation ------------ */
+.preparation_section {
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+.preparation_stats {
+  display: flex;
+  margin-top: 15px;
+  gap: 10px;
+}
+.preparation_text {
+  margin-top: 40px;
+}
+h3 {
+  margin-top: 20px;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.profile_img {
+  height: 80px;
+  border-radius: 100px;
+}
+.profile_text {
+  font-size: 20px;
+}
+
+
+/* ------------ 910px responsive ------------ */
+@media (max-width: 910px) {
+  .recipe_intro {
+    padding-bottom: 20px;
+  }
+}
+
+/* ------------ 535px responsive ------------ */
+@media (max-width: 535px) {
+  
+  .recipe_img {
+    height: 225px;
+  }
+  .recipe_stats {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .preparation_stats {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .portion_calculator {
+    display: flex;
+    justify-content: center;
+  }
+  .portion_btn {
+    padding: 10px 20px;
+  }
+  .inputfield {
+    margin-left: 12px;
+    width: 80px;
+  }
+}
+
+/* ------------ 360px responsive ------------ */
+@media (max-width: 360px) {
+  .recipe_stats {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .inputfield {
+    margin-left: 2px;
+    width: 74px;
+  }
+  li {
+    padding-left: 56px;
+  }
+}

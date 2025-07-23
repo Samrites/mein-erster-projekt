@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)file:///Users/samitu/Downloads/doc%20html/kochwelt%20js.html -->
+<html lang="de"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Salami – Kochwelt</title>
+  <link rel="icon" href="file:///Users/samitu/Downloads/doc%20html/favicon.ico" type="image/x-icon">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #fff;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background: #f8f8f8;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .logo {
+      height: 40px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #0a662e;
+      font-weight: bold;
+      transition: color 100ms ease-in-out;
+    }
+
+    nav a:hover {
+      color: #06491f;
+    }
+
+    #burger {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .main-image {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .info span {
+      background: #eee;
+      padding: 5px 15px;
+      border-radius: 15px;
+      margin-right: 10px;
+    }
+
+    .zutaten input {
+      width: 50px;
+      padding: 5px;
+      margin-right: 5px;
+    }
+
+    .zutaten button {
+      background: #0a662e;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .zutaten ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .zutaten li {
+      background: #f2f2f2;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 5px;
+    }
+
+    .zeiten span {
+      display: inline-block;
+      background: #eee;
+      padding: 5px 15px;
+      border-radius: 15px;
+      margin-bottom: 10px;
+      margin-right: 10px;
+    }
+
+    .autor {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .autor img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .social-icons img {
+      height: 30px;
+      margin: 0 10px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        flex-direction: column;
+      }
+
+      #burger {
+        display: block;
+      }
+
+      nav.active {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="file:///Users/samitu/Downloads/doc%20html/index.html"><img src="./Pizza Salami – Kochwelt_files/logo.png" alt="Logo" class="logo"></a>
+    <nav id="navbar">
+      <a href="file:///Users/samitu/Downloads/doc%20html/index.html">Start</a>
+      <a href="file:///Users/samitu/Downloads/doc%20html/rezept.html">Rezept des Tages</a>
+      <a href="file:///Users/samitu/Downloads/doc%20html/kontakt.html">Kontakt</a>
+      <a href="file:///Users/samitu/Downloads/doc%20html/impressum.html">Impressum</a>
+    </nav>
+    <div id="burger">☰</div>
+  </header>
+
+  <main class="container">
+    <h1>Pizza Salami</h1>
+    <img src="./Pizza Salami – Kochwelt_files/pizza salami.jpg" alt="Pizza Salami" class="main-image">
+
+    <div class="info">
+      <span>ca. 15–20 Min.</span>
+      <span>einfach</span>
+      <span>21.05.2025</span>
+    </div>
+
+    <section class="zutaten">
+      <h2>Zutaten für 
+        <input type="number" id="portionen" value="4" min="1"> 
+        <button onclick="portionWarnung()">Portionen</button>
+      </h2>
+      <ul>
+        <li>1 Pizzateig</li>
+        <li>150g Tomatensauce</li>
+        <li>200g geriebener Käse</li>
+        <li>100g Salami</li>
+        <li>1 Paprika (optional)</li>
+        <li>Oregano</li>
+        <li>Salz und Pfeffer</li>
+      </ul>
+    </section>
+
+    <section class="zubereitung">
+      <h2>Zubereitung</h2>
+      <div class="zeiten">
+        <span>ca. 15–20 Minuten</span>
+        <span>Gesamtzeit ca. 20 Minuten</span>
+      </div>
+      <p>
+        Ofen auf 220 °C vorheizen. Pizzateig auf ein Blech legen. Tomatensauce gleichmäßig
+        darauf verteilen. Käse und Salami darübergeben. Paprika in Streifen schneiden und
+        dazugeben. Mit Oregano, Salz und Pfeffer würzen. Pizza ca. 15 Minuten backen und heiß servieren.
+      </p>
+    </section>
+
+    <section class="autor">
+      <h3>Rezept erstellt von</h3>
+      <img src="./Pizza Salami – Kochwelt_files/samri.jpg" alt="Samrawit Tesfay">
+      <p><strong>Samrawit Tesfay</strong></p>
+    </section>
+  </main>
+
+  <footer>
+    <img src="./Pizza Salami – Kochwelt_files/logo.png" alt="Logo" class="logo">
+    <div class="social-icons">
+      <a href="file:///Users/samitu/Downloads/doc%20html/kochwelt%20js.html#"><img src="./Pizza Salami – Kochwelt_files/facebook_logo.png" alt="Facebook"></a>
+      <a href="file:///Users/samitu/Downloads/doc%20html/kochwelt%20js.html#"><img src="./Pizza Salami – Kochwelt_files/instagrram_logo.png" alt="Instagram"></a>
+    </div>
+    <p>© 2025 Samrawit Tesfay – Alle Rechte vorbehalten.</p>
+  </footer>
+
+  <script>
+    function portionWarnung() {
+      const p = document.getElementById("portionen").value;
+      if (!p || p <= 0) {
+        alert("Bitte gültige Portionenzahl eingeben!");
+      } else {
+        alert("Portionen angepasst: Bitte Zutaten entsprechend ändern.");
+      }
+    }
+
+    document.getElementById("burger").addEventListener("click", function () {
+      document.getElementById("navbar").classList.toggle("active");
+    });
+  </script>
+
+</body></html>

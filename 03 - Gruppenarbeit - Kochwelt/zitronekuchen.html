@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Kochwelt – Zitronenkuchen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #fff;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: white;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        nav a.active {
+            color: green;
+            font-weight: bold;
+        }
+
+        .top-section {
+            display: flex;
+            padding: 40px;
+            background-color: #fff;
+            flex-wrap: wrap;
+        }
+
+        .top-section img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+            margin-right: 30px;
+        }
+
+        .top-text {
+            max-width: 500px;
+        }
+
+        .top-text h1 {
+            font-size: 28px;
+        }
+
+        .top-text p {
+            margin: 10px 0;
+        }
+
+        .btn {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .new-section {
+            background: #f4f4f4;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .new-section h2 {
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            border-radius: 5px;
+            width: 200px;
+            padding: 10px;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .card p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .compare-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 40px;
+            background: white;
+            flex-wrap: wrap;
+        }
+
+        .compare-text {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .compare-text h2 {
+            margin-bottom: 15px;
+        }
+
+        .compare-text p {
+            color: #666;
+        }
+
+        .compare-image img {
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="Kochwelt Logo">
+        Kochwelt
+    </div>
+    <nav>
+        <a href="#">Start</a>
+        <a href="#" class="active">Rezept des Tages</a>
+        <a href="#">Kontakt</a>
+        <a href="#">Impressum</a>
+    </nav>
+</header>
+
+<section class="top-section">
+    <img src="zitronekuchen.jpg" alt="Zitronenkuchen">
+    <div class="top-text">
+        <h1>Zitronenkuchen</h1>
+        <p>Saftiger Zitronenkuchen ist schnell gebacken und bringt frischen Geschmack auf den Tisch.</p>
+        <p><strong>Zubereitungszeit:</strong> ca. 60 Minuten</p>
+        <button class="btn">Rezept öffnen</button>
+    </div>
+</section>
+
+<section class="new-section">
+    <h2>Lust auf was Neues?</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="zitronekuchen.jpg" alt="Zitronenkuchen">
+            <p>Frischer Zitronenkuchen</p>
+        </div>
+        <div class="card">
+            <img src="zitronekuchen.jpg" alt="Zitronenkuchen">
+            <p>Frischer Zitronenkuchen</p>
+        </div>
+        <div class="card">
+            <img src="zitronekuchen.jpg" alt="Zitronenkuchen">
+            <p>Frischer Zitronenkuchen</p>
+        </div>
+    </div>
+</section>
+
+<section class="compare-section">
+    <div class="compare-text">
+        <h2>Backofen vs. Airfryer – Was ist besser?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Saftiger Kuchen gelingt in beiden Geräten – aber wo wird er knuspriger?</p>
+    </div>
+    <div class="compare-image">
+        <img src="zitronekuchen.jpg" alt="Vergleich Bild">
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Kochwelt – Alle Rechte vorbehalten</p>
+</footer>
+
+</body>
+</html>

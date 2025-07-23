@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/recipe.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="icon" type="image/png" href="./assets/img/main_logo_small.png" />
+    <title>Kochwelt - Spaghetti Aglio Olio</title>
+  </head>
+
+  <body>
+
+    <header>
+      <a href="./index.html"><img class="header_logo" src="./assets/img/main_logo.png" /></a>
+      <nav class="hide_mobile">
+        <a href="./index.html" class="nav-link">Start</a>
+        <a href="./hoernli_ghakets_by_zita.html" class="nav-link">Rezept des Tages</a>
+        <a href="./contact.html" class="nav-link">Kontakt</a>
+        <a href="./impressum.html" class="nav-link">Impressum</a>
+      </nav>
+      <div class="burger_lines">
+        <button class="burger_btn" onclick="showBurgerMenu()">
+          _____<br />
+          _____<br />
+          _____<br />
+        </button>
+      </div>
+      <div class="burger_menu">
+        <a href="./index.html" class="nav-link">> Start</a>
+        <a href="./hoernli_ghakets_by_zita.html" class="nav-link nav-link_active">>Rezept des Tages</a>
+        <a href="./contact.html" class="nav-link">> Kontakt</a>
+        <a href="./impressum.html" class="nav-link">> Impressum</a>
+        <img src="./assets/img/main_logo.png" />
+        <a class="nav-link close_btn" onclick="closeBurgerMenu()">X Schließen</a>
+      </div>
+    </header>
+
+    <div class="contentblocker_1920px">
+
+      <section class="recipe_intro margin100">
+        <h1>Spaghetti Aglio Olio</h1>
+        <img class="recipe_img" src="./assets/img/recipe_img/aglio_olio.png" />
+        <div class="recipe_stats">
+          <div class="stat_info">
+            <img class="recipe_stats_img" src="./assets/img/recipe_img/recipe_icons/clock.svg" />
+            <span>20 Min.</span>
+          </div>
+          <div class="stat_info">
+            <img class="recipe_stats_img" src="./assets/img/recipe_img/recipe_icons/brain-solid.svg" />
+            <span>simpel</span>
+          </div>
+          <div class="stat_info">
+            <img class="recipe_stats_img" src="./assets/img/recipe_img/recipe_icons/calendar.svg" />
+            <span>25.05.2025</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="recipe_list_section margin100">
+          <div class="portion_calculator">
+          <label for ="ingredients_for">Zutaten für</label>
+          <form>
+            <input type="number" class="inputfield" id="servings" min="1" value="4" max="20" required />
+            <button type="submit" class="portion_btn">Portionen</button>
+          </form>
+        </div>
+        
+        
+        <ul class="ingredient_list">
+          <li class="li_grey">500gr Spaghetti</li>
+          <li>4 Knoblauchzehen</li>
+          <li class="li_grey">1 Bund Petersilie</li>
+          <li>150ml Olivenöl</li>
+          <li class="li_grey">Salz und Pfeffer</li>
+          <li>1 Pfefferoni</li>
+          <li class="li_grey">1 EL frische Petersilie</li>
+          <li>100gr Parmesan</li>
+        </ul>
+      </section>
+
+      <section class="preparation_section margin100">
+        <h1>Zubereitung</h1>
+        <div class="preparation_stats">
+          <div class="stat_info">
+            <img class="recipe_stats_img" src="./assets/img/recipe_img/recipe_icons/clock.svg" />
+            <span>ca. 10 Minuten</span>
+          </div>
+          <div class="stat_info">
+            <img class="recipe_stats_img" src="./assets/img/recipe_img/recipe_icons/clock.svg" />
+            <span>Gesamtzeit ca. 20 Minuten</span>
+          </div>
+        </div>
+        <div class="preparation_text">
+          <span>Koche die Spaghetti in reichlich Salzwasser al dente. Währenddessen schneidest du die Knoblauchzehen in feine Scheiben und hackst die Petersilie. Erhitze das Olivenöl in einer großen Pfanne und brate den Knoblauch zusammen mit der fein geschnittenen Peperoni vorsichtig an, bis er goldgelb ist – nicht zu heiß, sonst wird er bitter! Gib dann die abgegossenen Spaghetti direkt in die Pfanne und vermenge alles gut. Zum Schluss die Petersilie und etwas Pfeffer dazugeben und mit geriebenem Parmesan servieren.</span>
+        </div>
+        <h3>Rezept erstellt von</h3>
+        <div class="profile">
+          <img class="profile_img" src="./assets/img/recipe_img/profile_img/bagus.png" />
+          <span class="profile_text">Bagus</span>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <img class="invert_logo" src="./assets/img/main_logo.png" />
+      <div class="social_section">
+        <a href="https://facebook.com" target="_blank">
+          <img class="social_icon hide_mobile_725px" src="./assets/img/social_icons/facebook_logo.png" alt="facebook" />
+          <img class="social_icon_725px" src="./assets/img/social_icons/facebook_logo_725px.svg"/>
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img class="social_icon hide_mobile_725px" src="./assets/img/social_icons/instagram_logo.png" alt="instagramm" />
+          <img class="social_icon_725px" src="./assets/img/social_icons/instagram_logo_725px.svg"/>
+        </a>
+        <a href="https://x.com" target="_blank">
+          <img class="social_icon hide_mobile_725px" src="./assets/img/social_icons/twitter_logo.png" alt="twitter" />
+          <img class="social_icon_725px" src="./assets/img/social_icons/twitter_logo_725px.svg"/>
+        </a>
+      </div>
+    </footer>
+
+  </body>
+
+  <script src="./script/servings_calculator.js"></script>
+  <script src="./script/burger_menu.js"></script>
+</html>

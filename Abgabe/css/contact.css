@@ -1,0 +1,144 @@
+
+
+.main_box {
+    background-color: #DCDCDC;
+    border-radius: 8px;
+    padding: 0 10px;
+    min-height: 50px;
+    width: 400px;
+    margin-bottom: 80px;
+}
+
+.main_box form div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 200;
+}
+input {
+    border-radius: 4px;
+    border-style: none;
+    font-family: inherit;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 200px;
+    width: 100%;
+    border-radius: 4px;
+    border-style: none;
+    box-sizing: border-box;
+    resize: vertical;
+    font-family: inherit;
+}
+
+/* button {
+    color: white;
+    background-color: rgb(0, 128, 0);
+    padding: 4px 0;
+    font-size: 16px;
+    font-weight: 100;
+    border-style: none;
+    width: fit-content;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 12px;
+}
+
+*/
+
+.submit-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_content_kontact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.main_box {
+    background-color: #DCDCDC;
+    border-radius: 8px;
+    padding: 0 10px;
+    min-height: 50px;
+    width: 400px;
+    margin-bottom: 80px;
+}
+
+.main_box form div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 200;
+}
+input {
+    border-radius: 4px;
+    border-style: none;
+    font-family: inherit;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 200px;
+    width: 100%;
+    border-radius: 4px;
+    border-style: none;
+    box-sizing: border-box;
+    resize: vertical;
+    font-family: inherit;
+}
+
+/*
+button {
+    color: white;
+    background-color: #008001;
+    padding: 4px 0;
+    font-size: 16px;
+    font-weight: 100;
+    border-style: none;
+    width: fit-content;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 12px;
+}
+*/
+
+.submit_button_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.submit_button {
+    background-color: rgb(0 128, 0);
+    color: white;
+    padding: 10px 40px;
+    border: 0 solid black;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
