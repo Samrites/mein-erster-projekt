@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bestell App</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <!-- Header -->
+      <div class="topbar">
+        <div class="brand">
+          <img src="favicon.ico" alt="Logo">
+          <span>Bestell App</span>
+        </div>
+      </div>
+
+      <!-- Hero: dein Bild heißt food1.jpg -->
+      <div class="hero">
+        <img src="food1.jpg" alt="Großes Food-Foto (Hero)">
+      </div>
+
+      <!-- Info + rundes Logo -->
+      <div class="info">
+        <div class="logoCircle">
+          <!-- du nutzt das gleiche Icon als Logo -->
+          <img src="favicon.ico" alt="Restaurant Logo">
+        </div>
+        <h2 class="title">Paradise Noodles</h2>
+
+        <div class="rating" aria-label="Bewertung 4,2 von 5 Sternen">★★★★☆ <span>(4,2)</span></div>
+        <p class="desc">Japanische Nudelgerichte, Suppen & Snacks – frisch und schnell.</p>
+        <p class="meta">Lieferzeit: 30–40 min · Lieferkosten: 2,50 € · Mindestbestellwert: 10 €</p>
+
+        <!-- Kategorien werden per JS gefüllt -->
+        <nav id="catbar" class="catbar" aria-label="Kategorien"></nav>
+      </div>
+
+      <!-- Banner: dein Bild heißt food2.jpg -->
+      <div class="banner">
+        <img src="food2.jpg" alt="Kategorie-Banner" loading="lazy">
+      </div>
+
+      <!-- Menü + Warenkorb -->
+      <div class="grid">
+        <main id="menuRoot" aria-live="polite"></main>
+
+        <aside class="aside cart" aria-label="Warenkorb">
+          <h3>Warenkorb</h3>
+          <div id="cartList" class="list"></div>
+          <div class="sum">
+            <label class="delivery">
+              <input type="checkbox" id="ship"> Lieferkosten (2,50 €)
+            </label>
+            <div class="line"><span>Zwischensumme</span><strong id="subtotal">0,00 €</strong></div>
+            <div class="line"><span>Gesamt</span><strong id="total">0,00 €</strong></div>
+            <button id="orderBtn" class="btn btn-success" disabled>Bestellen</button>
+          </div>
+          <div id="confirmMsg" class="msg" aria-live="polite"></div>
+        </aside>
+      </div>
+
+      <!-- Mobiler Warenkorb-Button -->
+      <div class="mobileCartBar">
+        <button id="openDrawerBtn" class="btn openCart">Warenkorb öffnen</button>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer" role="contentinfo">
+        <div class="cols">
+          <div>
+            <strong>Paradise Noodles</strong><br>
+            Noodle Street 12, 12345 Musterstadt<br>
+            Tel: 01234 / 567890
+          </div>
+          <div>
+            <a href="#">Impressum</a> · <a href="#">Datenschutz</a> · <a href="#">Kontakt</a>
+          </div>
+        </div>
+        <div class="copy">© <span id="y"></span> Paradise Noodles</div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Mobile Drawer -->
+  <dialog id="drawer" class="drawer cart">
+    <div class="drawerHead">
+      <strong>Warenkorb</strong>
+      <form method="dialog"><button class="btn" aria-label="Schließen">✕</button></form>
+    </div>
+    <div class="drawerBody">
+      <div id="mCartList" class="list"></div>
+      <div class="sum">
+        <label class="delivery"><input type="checkbox" id="mShip"> Lieferkosten (2,50 €)</label>
+        <div class="line"><span>Zwischensumme</span><strong id="mSubtotal">0,00 €</strong></div>
+        <div class="line"><span>Gesamt</span><strong id="mTotal">0,00 €</strong></div>
+        <button id="mOrderBtn" class="btn btn-success" disabled>Bestellen</button>
+      </div>
+      <div id="mConfirmMsg" class="msg" aria-live="polite"></div>
+    </div>
+  </dialog>
+
+  <script src="script2.js"></script>
+</body>
+</html>
